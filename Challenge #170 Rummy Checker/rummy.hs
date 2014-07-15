@@ -69,7 +69,7 @@ readCard = do
 	suitIn <- getLine
 	let suit = read suitIn :: Suit
 	return (rank,suit)
-{--main = do
+main = do
 	print "Hand: "
 	hand <- replicateM 7 readCard
 	print "Card: "
@@ -81,7 +81,7 @@ readCard = do
 	timeIt $ print outString
 	print winningHands
 	return ()
---}
+
 {--
 assertTrue str test = TestCase $ assertEqual str True test
 
