@@ -13,7 +13,7 @@ type Card = (Rank, Suit)
 type Hand = [Card]
 
 
---I was too lazy to derive num --
+--I was too lazy to derive ord --
 rankToNum ::  Num a => Rank -> a
 rankToNum Two = 2
 rankToNum Three = 3
